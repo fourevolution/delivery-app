@@ -1,0 +1,22 @@
+<%- include('../partials/header.ejs') %>
+<%- include('../partials/navigation.ejs') %>
+
+<h1>Служба доставки</h1>
+
+<div class="client-section"></div>
+<input class="client-section_name" type="text" placeholder="Введите имя" />
+<input class="client-section_email" type="email" placeholder="Введите Email" />
+<input class="client-section_id" type="text" placeholder="Введите id-товара" />
+
+<div>
+    <select class="client-section_select">
+        <option selected>Выберите способ доставки</option>
+        <option id="express">Курьерская доставка</option>
+        <option id="pickpoint">Точка выдачи</option>
+    </select>
+</div>
+
+<button type="button" class="client-section_sumbit-order-button">Подтвердить заказ</button>
+
+
+<%- include('../partials/footer.ejs') %>
